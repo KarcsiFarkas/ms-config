@@ -1,0 +1,102 @@
+tenant_domain: example.local
+deployment_runtime: docker
+deployment_target: null
+services:
+  syncthing:
+    enabled: true
+    options:
+      SYNCTHING_PUID: '1000'
+      SYNCTHING_PGID: '1000'
+  immich:
+    enabled: true
+    options:
+      IMMICH_VERSION: release
+      UPLOAD_LOCATION: ./library
+      DB_PASSWORD: postgres
+  pihole:
+    enabled: true
+    options:
+      WEBPASSWORD: ''
+      DNS1: 8.8.8.8
+      DNS2: 8.8.4.4
+  qbittorrent:
+    enabled: true
+    options:
+      QBITTORRENT_PUID: '1000'
+      QBITTORRENT_PGID: '1000'
+      WEBUI_PORT: '8080'
+  plex:
+    enabled: true
+    options:
+      PLEX_CLAIM: ''
+      PLEX_UID: '1000'
+      PLEX_GID: '1000'
+  stirling-pdf:
+    enabled: true
+    options:
+      DOCKER_ENABLE_SECURITY: false
+      INSTALL_BOOK_AND_ADVANCED_HTML_OPS: false
+  vaultwarden:
+    enabled: true
+    options:
+      VAULTWARDEN_ADMIN_TOKEN: ''
+      WEBSOCKET_ENABLED: false
+      SIGNUPS_ALLOWED: false
+  nextcloud:
+    enabled: true
+    options:
+      NEXTCLOUD_ADMIN_USER: admin
+      NEXTCLOUD_ADMIN_PASSWORD: changeme
+      MYSQL_PASSWORD: nextcloud
+      MYSQL_DATABASE: nextcloud
+  sonarr:
+    enabled: true
+    options:
+      SONARR_PUID: '1000'
+      SONARR_PGID: '1000'
+      SONARR_API_KEY: ''
+  openvpn:
+    enabled: true
+    options:
+      OVPN_DATA: ovpn-data-example
+      EASYRSA_REQ_CN: ''
+  freshrss:
+    enabled: true
+    options:
+      FRESHRSS_PUID: '1000'
+      FRESHRSS_PGID: '1000'
+      CRON_MIN: 1,31
+  navidrome:
+    enabled: true
+    options:
+      ND_MUSICFOLDER: /music
+      ND_DATAFOLDER: /data
+      ND_LOGLEVEL: info
+  radarr:
+    enabled: true
+    options:
+      RADARR_PUID: '1000'
+      RADARR_PGID: '1000'
+      RADARR_API_KEY: ''
+  homepage:
+    enabled: true
+    options:
+      HOMEPAGE_PUID: '1000'
+      HOMEPAGE_PGID: '1000'
+  youtubedl-material:
+    enabled: true
+    options:
+      YTDL_PUID: '1000'
+      YTDL_PGID: '1000'
+      ytdl_mongodb_connection_string: mongodb://ytdl-mongo-db:27017
+  fittracker:
+    enabled: true
+    options:
+      FITTRACKER_PUID: '1000'
+      FITTRACKER_PGID: '1000'
+  jellyfin:
+    enabled: true
+    options:
+      JELLYFIN_PUBLISHED_SERVER_URL: ''
+      JELLYFIN_PUID: '1000'
+      JELLYFIN_PGID: '1000'
