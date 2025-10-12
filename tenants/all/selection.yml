@@ -1,6 +1,6 @@
 tenant_domain: example.local
 deployment_runtime: docker
-deployment_target: null
+deployment_target: proxmox-main
 services:
   immich:
     enabled: true
