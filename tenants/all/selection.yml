@@ -2,11 +2,6 @@ tenant_domain: example.local
 deployment_runtime: docker
 deployment_target: null
 services:
-  syncthing:
-    enabled: true
-    options:
-      SYNCTHING_PUID: '1000'
-      SYNCTHING_PGID: '1000'
   immich:
     enabled: true
     options:
