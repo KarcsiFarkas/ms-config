@@ -1,0 +1,6 @@
+tenant_domain: none.example.com
+deployment_runtime: docker
+timezone: Europe/London
+universal_username: noneuser
+password_mode: generate
+deployment_target: null
