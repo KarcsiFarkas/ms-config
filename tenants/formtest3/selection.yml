@@ -1,0 +1,6 @@
+services:
+  gitlab:
+    enabled: true
+    options:
+      GITLAB_ROOT_PASSWORD: securepassword123
+      GITLAB_EXTERNAL_URL: https://gitlab.required.example.com
