@@ -1,0 +1,10 @@
+services:
+  syncthing:
+    enabled: true
+    options:
+      SYNCTHING_PUID: '1000'
+  gitlab:
+    enabled: true
+    options:
+      GITLAB_ROOT_PASSWORD: securepassword123
+      GITLAB_EXTERNAL_URL: https://gitlab.mixed.example.com
