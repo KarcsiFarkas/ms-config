@@ -1,0 +1,6 @@
+tenant_domain: nix.local
+deployment_runtime: nix
+timezone: Etc/UTC
+universal_username: nix_user
+password_mode: generate
+deployment_target: null

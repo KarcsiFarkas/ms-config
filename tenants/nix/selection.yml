@@ -1,0 +1,112 @@
+services:
+  syncthing:
+    enabled: true
+    options:
+      services.syncthing.user: syncthing
+      services.syncthing.dataDir: /var/lib/syncthing
+      services.syncthing.openDefaultPorts: true
+  gitlab:
+    enabled: true
+    options:
+      services.gitlab.host: gitlab.example.local
+      services.gitlab.port: '443'
+      services.gitlab.https: true
+  immich:
+    enabled: true
+    options:
+      services.immich.openFirewall: true
+      services.immich.mediaLocation: /var/lib/immich/library
+  pihole:
+    enabled: true
+    options:
+      services.pihole.enable: true
+      services.pihole.webPassword: ''
+  qbittorrent:
+    enabled: true
+    options:
+      services.qbittorrent.user: qbittorrent
+      services.qbittorrent.group: qbittorrent
+      services.qbittorrent.openFirewall: true
+  plex:
+    enabled: true
+    options:
+      services.plex.enable: true
+      services.plex.openFirewall: true
+      services.plex.dataDir: /var/lib/plex
+  stirling-pdf:
+    enabled: true
+    options: {}
+  vaultwarden:
+    enabled: true
+    options:
+      services.vaultwarden.config.domain: vaultwarden.example.local
+      services.vaultwarden.config.signupsAllowed: true
+      services.vaultwarden.config.rocketPort: '8222'
+  nextcloud:
+    enabled: true
+    options:
+      services.nextcloud.hostName: nextcloud.example.local
+      services.nextcloud.config.adminuser: admin
+      services.nextcloud.config.dbtype: pgsql
+  sonarr:
+    enabled: true
+    options:
+      services.sonarr.openFirewall: true
+      services.sonarr.user: sonarr
+  habitica:
+    enabled: true
+    options: {}
+  seafile:
+    enabled: true
+    options:
+      services.seafile.adminEmail: nix@nix
+      services.seafile.initialAdminPassword: changeme
+      services.seafile.seafileSettings.SERVICE_URL: nix
+  firefly-iii:
+    enabled: true
+    options:
+      services.firefly-iii.virtualHost: nix
+      services.firefly-iii.appKeyFile: /var/lib/firefly-iii/app-key
+  openvpn:
+    enabled: true
+    options:
+      services.openvpn.servers.server.config: nix
+      services.openvpn.servers.server.autoStart: true
+  freshrss:
+    enabled: true
+    options:
+      services.freshrss.enable: true
+      services.freshrss.virtualHost: freshrss.example.local
+      services.freshrss.database.type: sqlite
+  navidrome:
+    enabled: true
+    options:
+      services.navidrome.settings.MusicFolder: /var/lib/navidrome/music
+      services.navidrome.settings.DataFolder: /var/lib/navidrome/data
+  radarr:
+    enabled: true
+    options:
+      services.radarr.openFirewall: true
+      services.radarr.user: radarr
+  homepage:
+    enabled: true
+    options:
+      services.homepage-dashboard.openFirewall: true
+      services.homepage-dashboard.listenPort: '3000'
+  youtubedl-material:
+    enabled: true
+    options: {}
+  fittracker:
+    enabled: true
+    options: {}
+  vikunja:
+    enabled: true
+    options:
+      services.vikunja.frontendHostname: vikunja.example.local
+      services.vikunja.port: '3456'
+      services.vikunja.database.type: postgres
+  jellyfin:
+    enabled: true
+    options:
+      services.jellyfin.openFirewall: true
+      services.jellyfin.user: jellyfin
