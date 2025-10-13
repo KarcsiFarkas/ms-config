@@ -1,4 +1,0 @@
-tenant_domain: example.local
-deployment_runtime: docker
-deployment_target: proxmox-main
-services: {}
