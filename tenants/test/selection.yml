@@ -1,0 +1,4 @@
+services:
+  nextcloud:
+    enabled: true
+    options: {}
