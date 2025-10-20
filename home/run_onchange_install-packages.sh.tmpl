@@ -1,0 +1,20 @@
+#!/bin/sh
+# This script runs on 'chezmoi apply' if it has changed.
+
+set -eu
+
+{{ if eq .data.osid "linux-ubuntu" -}}
+echo "==> Installing base packages for Ubuntu..."
+sudo apt-get update
+sudo apt-get install -y neovim tmux zsh git curl
+
+{{ else if eq .data.osid "linux-arch" -}}
+echo "==> Installing base packages for Arch Linux..."
+sudo pacman -Syu --noconfirm --needed neovim tmux zsh git curl
+
+{{ else if eq .data.osid "nixos" -}}
+echo "==> Skipping package installation for NixOS (managed declaratively)."
+
+{{ else -}}
+echo "==> OS ID '{{ .data.osid }}' not recognized for package installation."
+{{- end }}
