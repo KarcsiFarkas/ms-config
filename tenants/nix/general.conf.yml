@@ -3,4 +3,4 @@ deployment_runtime: nix
 timezone: Etc/UTC
 universal_username: nix_user
 password_mode: generate
-deployment_target: nix-minimal
+deployment_target: nixos-vm-01
