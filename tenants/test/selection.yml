@@ -1,4 +1,18 @@
 services:
-  nextcloud:
+  traefik:
     enabled: true
-    options: {}
+    options:
+      TRAEFIK_ACME_EMAIL: "admin@test.local"
+  
+  vaultwarden:
+    enabled: true
+    options:
+      VAULTWARDEN_DOMAIN: "https://vault.test.local"
+  
+  tailscale:
+    enabled: true
+    options:
+      TAILSCALE_AUTHKEY: "your-tailscale-auth-key"
+  
+  homepage:
+    enabled: true
