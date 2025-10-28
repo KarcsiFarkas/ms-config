@@ -66,7 +66,7 @@ services:
     enabled: true
     options:
       services.firefly-iii.virtualHost: nix
-      services.firefly-iii.appKeyFile: /var/lib/firefly-iii/app-key
+      services.firefly-iii.appKeyFile: /var/lib/firefly-iii.nix/app-key
   openvpn:
     enabled: true
     options:
