@@ -1,4 +1,4 @@
-tenant_domain: test.example.com
+tenant_domain: test
 deployment_runtime: docker
 timezone: Europe/London
 universal_username: testuser
