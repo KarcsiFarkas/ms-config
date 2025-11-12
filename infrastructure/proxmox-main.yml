@@ -1,6 +1,6 @@
 # This file defines a physical or virtual host.
 # It corresponds to your old vm_specs.yaml and parts of defaults.yaml
-api_url: "https://pve.homelab.local:8006/api2/json"
-node: "pve"
+api_url: "https://192.168.1.111:8006/api2/json"
+node: "fkarcsi"
 storage_pool: "local-lvm"
 network_bridge: "vmbr0"
