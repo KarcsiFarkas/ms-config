@@ -4,3 +4,16 @@ services:
     options:
       SYNCTHING_PUID: '1000'
       SYNCTHING_PGID: '1000'
+  qbittorrent:
+    enabled: true
+    options:
+      QBITTORRENT_PUID: '1000'
+      QBITTORRENT_PGID: '1000'
+      WEBUI_PORT: '8080'
+  nextcloud:
+    enabled: true
+    options:
+      NEXTCLOUD_ADMIN_USER: admin
+      NEXTCLOUD_ADMIN_PASSWORD: changeme
+      MYSQL_PASSWORD: nextcloud
+      MYSQL_DATABASE: nextcloud
