@@ -1,4 +1,4 @@
-tenant_domain: nix.local
+tenant_domain: nix.karcsilab.duckdns.org
 deployment_runtime: nix
 timezone: Etc/UTC
 universal_username: nix_user

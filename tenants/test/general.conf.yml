@@ -1,4 +1,4 @@
-tenant_domain: test.localhost
+tenant_domain: test.karcsilab.duckdns.org
 deployment_runtime: docker
 timezone: Europe/London
 universal_username: testuser
