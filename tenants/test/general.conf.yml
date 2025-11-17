@@ -4,9 +4,22 @@ timezone: Europe/London
 universal_username: testuser
 password_mode: generate
 deployment_target: web-01
+
+# Service domains - Using subdomain format <service>.<domain>
 service_domains:
   homepage: karcsilab.duckdns.org
-  traefik: traefik-karcsilab.duckdns.org
-  vaultwarden: vault-karcsilab.duckdns.org
-  gitea: git-karcsilab.duckdns.org
-  immich: photos-karcsilab.duckdns.org
+  traefik: traefik.karcsilab.duckdns.org
+  vaultwarden: vault.karcsilab.duckdns.org
+  gitea: git.karcsilab.duckdns.org
+  immich: photos.karcsilab.duckdns.org
+  jellyfin: media.karcsilab.duckdns.org
+  nextcloud: cloud.karcsilab.duckdns.org
+  authentik: auth.karcsilab.duckdns.org
+
+# Previous config (hyphen format - commented out)
+# service_domains:
+#   homepage: karcsilab.duckdns.org
+#   traefik: traefik-karcsilab.duckdns.org
+#   vaultwarden: vault-karcsilab.duckdns.org
+#   gitea: git-karcsilab.duckdns.org
+#   immich: photos-karcsilab.duckdns.org
