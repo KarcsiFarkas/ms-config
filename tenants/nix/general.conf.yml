@@ -1,6 +1,6 @@
 tenant_domain: nix.karcsilab.duckdns.org
-deployment_runtime: nix
+deployment_runtime: proxmox
 timezone: Etc/UTC
 universal_username: nix_user
 password_mode: generate
-deployment_target: nix-minimal
+deployment_target: nixos-vm-01
