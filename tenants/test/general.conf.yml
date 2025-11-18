@@ -1,9 +1,32 @@
-tenant_domain: test
+tenant_domain: test.192-168-1-20.nip.io
 deployment_runtime: docker
 timezone: Europe/London
 universal_username: testuser
-password_mode: generate
+password_mode: generate  # "generate" for unique passwords, "global" for shared password
 deployment_target: web-01
+
+# Service domains (auto-generated if not specified)
+# Format: service-name.tenant_domain
+service_domains:
+  traefik: traefik.test.192-168-1-20.nip.io
+  vaultwarden: vaultwarden.test.192-168-1-20.nip.io
+  homepage: test.192-168-1-20.nip.io
+  nextcloud: nextcloud.test.192-168-1-20.nip.io
+  gitlab: gitlab.test.192-168-1-20.nip.io
+  gitea: gitea.test.192-168-1-20.nip.io
+  jellyfin: jellyfin.test.192-168-1-20.nip.io
+  immich: immich.test.192-168-1-20.nip.io
+  vikunja: vikunja.test.192-168-1-20.nip.io
+  lldap: lldap.test.192-168-1-20.nip.io
+  authelia: authelia.test.192-168-1-20.nip.io
+
+# Optional remote overrides if you switch away from localhost
+#service_domains:
+#  homepage: karcsilab.duckdns.org
+#  traefik: traefik-karcsilab.duckdns.org
+#  vaultwarden: vault-karcsilab.duckdns.org
+#  gitea: git-karcsilab.duckdns.org
+#  immich: photos-karcsilab.duckdns.org
 
 # Previous configs (commented out for reference)
 #
