@@ -1,0 +1,18 @@
+tenant_domain: example.local
+deployment_runtime: docker
+timezone: Etc/UTC
+universal_username: docker_all
+password_mode: generate
+deployment_target: null
+tailscale:
+  enabled: true
+  auth_key: ''
+  hostname: null
+  accept_routes: false
+  accept_dns: true
+  ssh: false
+  advertise_exit_node: false
+  tags:
+  - tag:paas-server
+  advertise_routes: []
+  exit_node: none
