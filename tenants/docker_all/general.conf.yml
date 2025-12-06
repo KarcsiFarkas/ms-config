@@ -1,11 +1,11 @@
-tenant_domain: example.local
+tenant_domain: docker_all.192-168-1-21.nip.io
 deployment_runtime: docker
 timezone: Etc/UTC
 universal_username: docker_all
 password_mode: generate
-deployment_target: null
+deployment_target: vm-docker-all
 tailscale:
-  enabled: true
+  enabled: false
   auth_key: ''
   hostname: null
   accept_routes: false
